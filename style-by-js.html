@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Style by JS</title>
+    <style>
+        section.backColor {
+            background-color: pink !important;
+        }
+
+        .fontSize {
+            font-size: 2rem;
+        }
+    </style>
+</head>
+
+<body>
+
+    <main id="main-container">
+        <section id="section-1" class="fontSize">
+            <h1>Welcome to bangladesh</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores exercitationem repudiandae cum dolorem,
+                tenetur provident quo eaque odit enim perferendis.</p>
+            <ul>
+                <li>Sajal</li>
+                <li>Akashi</li>
+                <li>Babu</li>
+                <li>Samiha</li>
+                <li>Suchi</li>
+            </ul>
+        </section>
+        <section id="section-2">
+            <ul id="program-list">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JS</li>
+                <li>Node Js</li>
+                <li>React</li>
+            </ul>
+
+            <h1>Welcome to bangladesh</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores exercitationem repudiandae cum dolorem,
+                tenetur provident quo eaque odit enim perferendis.</p>
+        </section>
+    </main>
+
+    <script src="js/node.dom.js"></script>
+    <script src="js/append.js"></script>
+    <script>
+        const sections = document.querySelectorAll('section');
+        for (const section of sections) {
+            section.style.color = 'azure';
+            section.style.backgroundColor = 'gray';
+            section.style.border = '3px solid green';
+            section.style.margin = '10px';
+            section.style.padding = '10px';
+        }
+        const sec1 = document.getElementById('section-1');
+        sec1.style.textAlign = 'center';
+        sec1.classList.add('backColor');
+        sec1.classList.remove('fontSize');
+    </script>
+</body>
+
+</html>
